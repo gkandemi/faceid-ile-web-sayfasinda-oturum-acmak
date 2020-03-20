@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>kablosuzkedi | FaceID ile Oturum Kontrolü</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/face-api.min.js"></script>
+    <script defer src="assets/js/app.js"></script>
+  </head>
+  <body>
+    <div class="container" id="appContainer">
+      <div class="video-container" id="videoContainer">
+        <video id="video" width="400" height="300" autoplay muted></video>
+        <span id="faceIDResult"></span>
+      </div>
+      <!-- Login Container -->
+      <div class="login-container face-id-active" id="loginContainer">
+        <div class="form-item w-100">
+          <input type="text" placeholder="Kullanıcı Adı" />
+        </div>
+        <div class="form-item w-100">
+          <input type="password" placeholder="Şifre" />
+        </div>
+        <div class="button-container w-100">
+          <button id="loginButton">
+            <i class="fa fa-keyboard"></i>
+            <span>Giriş Yap</span>
+          </button>
+          <button id="faceIdButton">
+            <i class="fa fa-camera"></i>
+            <span id="face-id-button-text">FaceID Kullan</span>
+          </button>
+        </div>
+
+        <div class="login-footer">
+          <img src="assets/images/KablosuzKedi_2.png" alt="" />
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="footer">
+        <span>kablosuzkedi | FaceID ile Oturum Kontrolü</span>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>kablosuzkedi | FaceID ile Oturum Kontrolü</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #66666673;
+        color: #000;
+      }
+
+      .container {
+        width: 700px;
+        margin-top: 20px;
+      }
+
+      .container .footer {
+        position: fixed;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(65, 70, 73);
+        height: 100px;
+        border-top: 1px solid #665;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+
+      .prev-videos {
+        width: 1200px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>FaceID ile Oturum Açma Yapımı</h3>
+      <p>
+        Bu dersimizde FaceAPi ile ilgili gördüğümüz 2 konuyu birleştiriyoruz.
+        Aslında yapacağımız işlem oldukça basit. Kullanıcı istediği zaman
+        Kamerayı aktif edebilecek. Ardından FaceAPi ile kamerada tespit edilen
+        yüzün; bizim kendi local resim veri tabanımızda olan verilerle
+        karşılaştıracağız. Eğer bulursak ekranda bir mesaj gösterip kullanıcıyı
+        3 saniye içerisinde yönlendireceğiz.
+      </p>
+
+      <p>
+        Eğer önceki 2 videoyu izlemediyseniz hemen aşağıdan o videolara
+        ulaşabilirsiniz :)
+      </p>
+
+      <!-- Footer -->
+      <div class="footer">
+        <span>kablosuzkedi | FaceID ile Oturum Kontrolü</span>
+      </div>
+    </div>
+
+    <div class="prev-videos">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/vBt540hvogs"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/0unx0HxSgSI"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>

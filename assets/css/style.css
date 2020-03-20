@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding-top: 20px;
+  transition: all 1s;
+}
+
+.container .login-container {
+  padding: 10px 40px;
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 1s;
+  background-color: #fff;
+  border: 1px solid #ccc;
+
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.12);
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.12);
+}
+
+.video-container {
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  transform: translate(-50%, -150%);
+  transition: all 1s;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.faceIDActive {
+  transform: translate(-50%, 0%) !important;
+  transition: all 1s;
+}
+
+.faceIDShow {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -120%);
+  visibility: visible;
+  transition: all 1s;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.form-item {
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+input {
+  padding: 10px 10px;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  padding: 10px;
+  flex: 1;
+  background-color: rgb(13, 91, 143);
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+}
+
+button.active {
+  background-color: rgb(0, 153, 255);
+}
+
+button:hover {
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: rgb(0, 153, 255);
+}
+
+button:first-child {
+  margin-right: 5px;
+}
+
+button i {
+  margin-right: 2px;
+}
+
+.container .login-footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  z-index: -99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.container .login-header {
+  position: fixed;
+  top: -42px;
+  left: 0;
+  width: 100%;
+  z-index: -99;
+}
+
+.container .footer {
+  position: fixed;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  background-color: rgb(65, 70, 73);
+  height: 100px;
+  border-top: 1px solid #665;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.login-footer img {
+  width: 40px;
+}
+
+video {
+  border: 5px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#fadeIDResult {
+  font-size: 18px;
+  display: none;
+}
+.success {
+  color: limegreen;
+}
+
+.error {
+  color: tomato;
+}
+
+canvas {
+  position: absolute;
+}
